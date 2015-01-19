@@ -1,0 +1,78 @@
+<?xml version="1.0" encoding="utf-8"?>
+<manifest xmlns:android="http://schemas.android.com/apk/res/android"
+    package="edu.dartmouth.stresscalendar"
+    android:versionCode="1"
+    android:versionName="1.0" >
+
+    <uses-sdk
+        android:minSdkVersion="11"
+        android:targetSdkVersion="17" />
+
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+    <uses-permission android:name="android.permission.WAKE_LOCK" />
+
+    <permission
+        android:name="edu.dartmouth.stresscalendar.permission.C2D_MESSAGE"
+        android:protectionLevel="signature" />
+
+    <uses-permission android:name="android.permission.ACCESS_FINE_LOCATION" />
+    <uses-permission android:name="android.permission.INTERNET" />
+    <uses-permission android:name="android.permission.ACCESS_COARSE_LOCATION" />
+    <uses-permission android:name="android.permission.ACCESS_NETWORK_STATE" />
+    <uses-permission android:name="android.permission.WRITE_EXTERNAL_STORAGE" />
+
+    <application
+        android:allowBackup="true"
+        android:icon="@drawable/ic_launcher"
+        android:label="@string/app_name"
+        android:theme="@style/AppTheme" >
+        <uses-library android:name="com.google.android.maps" />
+
+        <service android:name="edu.dartmouth.cs.biorhythm.location.collection.TrackingService" />
+        <service android:name="edu.dartmouth.cs.biorhythm.location.collection.ClusterService" />
+        <service android:name="edu.dartmouth.cs.biorhythm.location.collection.ProxService" />
+
+        <activity
+            android:name="edu.dartmouth.cs.biorhythm.location.collection.MainActivity"
+            android:label="@string/app_name" 
+             android:screenOrientation="portrait">
+            <intent-filter>
+                <action
+                    android:name="android.intent.action.MAIN" />
+
+                <category android:name="android.intent.category.LAUNCHER" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.dartmouth.cs.biorhythm.location.collection.Survey" >
+            <intent-filter>
+                <action android:name="edu.dartmouth.stresscalendar.SURVEY" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.dartmouth.cs.biorhythm.location.collection.ShowLocations" >
+            <intent-filter>
+                <action android:name="edu.dartmouth.stresscalendar.SHOWLOCATIONS" />
+
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        <activity android:name="edu.dartmouth.cs.biorhythm.location.collection.Cluster" >
+            <intent-filter>
+                <action android:name="edu.dartmouth.stresscalendar.CLUSTER" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+        
+        <activity android:name="edu.dartmouth.cs.biorhythm.location.collection.ChangeLoc" >
+            <intent-filter>
+                <action android:name="edu.dartmouth.stresscalendar.CHANGELOC" />
+                <category android:name="android.intent.category.DEFAULT" />
+            </intent-filter>
+        </activity>
+
+        <meta-data
+            android:name="com.google.android.maps.v2.API_KEY"
+            android:value="AIzaSyCN_OB44ISocsgEgTpT2hpxuoUdWZ7RaMg" />
+    </application>
+
+</manifest>

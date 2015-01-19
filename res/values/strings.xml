@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<resources>
+
+    <string name="app_name">LocationSurveys</string>
+    <string name="action_settings">Settings</string>
+    <string name="hello_world">Hello world!</string>
+    <string name="other_hint">Please specify if other</string>
+    <string name="not_button_title">NO!</string>
+    <string name="name_hint">Please enter name of location</string>
+    <string name="question0">Name of Location</string>
+    <string name="question00">Is this location a significant location; if not please hit NO!</string>
+    <string name="question1">What is this place?</string>
+    <string name="question2">What do you do here?</string>
+    <string name="question3">Who are you with?</string>
+    <string name="question4">What is your current mood?</string>
+    <string name="cbx1">Work, study</string>
+    <string name="cbx2">Attend meetings, classes</string>
+    <string name="cbx3">Talk, socialize</string>
+    <string name="cbx4">Eat, snack</string>
+    <string name="cbx5">Drink coffee, tea</string>
+    <string name="cbx6">Drink alcohol</string>
+    <string name="cbx7">Smoke</string>
+    <string name="cbx8">Text, email, use social media</string>
+    <string name="cbx9">Browse the internet</string>
+    <string name="cbx10">Read</string>
+    <string name="cbx11">Listen to music</string>
+    <string name="cbx12">Watch TV, films</string>
+    <string name="cbx13">Shop, errands</string>
+    <string name="cbx14">Exercise, sports</string>
+    <string name="cbx15">Religious, spiritual activies</string>
+    <string name="cbx16">Rest, relax</string>
+    <string name="save_button_title">Save</string>
+    <string name="show">Significant Location Responses</string>
+
+    <string-array name="where_array">
+        <item>Home</item>
+        <item>Work</item>
+        <item>School</item>
+        <item>Friend\'s Home</item>
+        <item>Girlfriend / Boyfriend\'s Home</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="who_array">
+        <item>Alone, or with strangers</item>
+        <item>Family</item>
+        <item>Colleagues, classmates</item>
+        <item>Friends</item>
+        <item>Other</item>
+    </string-array>
+    <string-array name="mood_array">
+        <item>Angry</item>
+        <item>Annoyed</item>
+        <item>Anxious</item>
+        <item>Awake</item>
+        <item>Bored</item>
+        <item>Calm</item>
+        <item>Content</item>
+        <item>Energetic</item>
+        <item>Happy</item>
+        <item>Stressed</item>
+        <item>Tired</item>
+    </string-array>
+
+</resources>

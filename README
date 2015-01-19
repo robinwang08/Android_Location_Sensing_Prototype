@@ -1,0 +1,3 @@
+Prototype of the location sensing functionality to be integrated with a larger app to detect/sense a user’s well-being and daily life.
+
+The app uses a basic clustering algorithm to determine the most significant locations in an user’s life. These locations are determined by the length of time the user spends in a single place and the frequency of visits.
